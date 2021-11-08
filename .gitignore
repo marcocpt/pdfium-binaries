@@ -1,0 +1,9 @@
+/.cipd
+/.env
+/.gclient
+/.gclient_entries
+/.path
+/build
+/depot_tools
+/pdfium-mac-x64-debug.tgz
+/staging
