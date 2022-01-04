@@ -45,4 +45,5 @@ mkdir -p "$BUILD"
 # Generate Ninja files
 pushd "$SOURCE"
 gn gen "$BUILD"
+gn gen --ide=xcode out/debug
 popd
