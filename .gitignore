@@ -7,3 +7,4 @@
 /depot_tools
 /pdfium-mac-x64-debug.tgz
 /staging
+*.tgz

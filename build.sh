@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 #
 # Variables to provide:
-# CONFIGURATION = Debug | Release
+# PDFium_CONFIGURATION = Debug | Release
 # PDFium_TARGET_CPU = x86 | x64 | arm | arm64
-# PDFium_TARGET_OS = mac | linux | win
+# PDFium_TARGET_OS = mac | ios | linux | win
 # PDFium_BRANCH = main | chromium/3211 | ...
 # PDFium_V8 = enabled
+PDFium_CONFIGURATION=Debug
+PDFium_TARGET_CPU=x64
+PDFium_TARGET_OS=mac
 
 set -ex
 
