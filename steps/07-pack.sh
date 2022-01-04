@@ -31,7 +31,8 @@ rm -f "$STAGING/include/README"
 rm -f "$STAGING/include/PRESUBMIT.py"
 case "$OS" in
   mac)
-    mv "$BUILD/libpdfium.dylib" "$STAGING_LIB"
+    mv "$BUILD/libpdfium.dylib" "$STAGING_LIB/libpdfium_macOS.dylib"
+    install_name_tool -id @rpath/libpdfium_macOS.dylib "$STAGING_LIB/libpdfium_macOS.dylib"
     ;;
   linux)
     mv "$BUILD/libpdfium.so" "$STAGING_LIB"
